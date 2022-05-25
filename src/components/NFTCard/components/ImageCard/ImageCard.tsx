@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyledImageCard } from './image-card.styles'
-import { ImageProps } from './image-card.interfaces'
+import { ImageCardProps } from './image-card.interfaces'
 const ImageCard = ({
   primaryImage,
   alternativeText,
   ...props
-}: ImageProps): JSX.Element => {
+}: ImageCardProps): JSX.Element => {
   return (
     <StyledImageCard>
       <img src={primaryImage} alt={alternativeText} />

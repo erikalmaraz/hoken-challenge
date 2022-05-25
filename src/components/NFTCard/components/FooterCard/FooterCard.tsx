@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyledFooterCard } from './footer-card.styles'
-
-const FooterCard = ({ ...props }): JSX.Element => {
+import { FooterProps } from './footer.interfaces'
+const FooterCard = ({ name, ...props }: FooterProps): JSX.Element => {
   return (
     <StyledFooterCard>
       <div className="footer-card--avatar">
@@ -11,7 +11,7 @@ const FooterCard = ({ ...props }): JSX.Element => {
         />
       </div>
       <div className="footer-card--name">
-        Creation of <b>Jules Wyvern</b>
+        Creation of <b>{name}</b>
       </div>
     </StyledFooterCard>
   )

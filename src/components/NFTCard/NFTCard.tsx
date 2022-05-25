@@ -13,9 +13,13 @@ const NFTCard = ({ ...props }): JSX.Element => {
         primaryImage={NFTInfo.image}
         alternativeText={`${NFTInfo.title} - By ${NFTInfo.creator}`}
       />
-      <InfoCard />
-      <DateValueCard />
-      <FooterCard />
+      <InfoCard title={NFTInfo.title} description={NFTInfo.description} />
+      <DateValueCard
+        currentValue={NFTInfo.value}
+        currency={NFTInfo.currency}
+        daysLeft={NFTInfo.days}
+      />
+      <FooterCard name={NFTInfo.creator} />
     </StyledNFTCard>
   )
 }
