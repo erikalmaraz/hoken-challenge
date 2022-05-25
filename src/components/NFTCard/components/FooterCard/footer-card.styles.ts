@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { neutral, primary } from '../../../../styles/colors'
+import { neutral, primary, white } from '../../../../styles/colors'
 
 export const StyledFooterCard = styled.div`
   display: flex;
@@ -12,6 +12,8 @@ export const StyledFooterCard = styled.div`
     max-width: 35px;
     img {
       max-width: 35px;
+      border: 2px solid ${white};
+      border-radius: 100%;
     }
   }
   .footer-card--name {

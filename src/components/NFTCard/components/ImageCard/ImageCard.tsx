@@ -3,8 +3,7 @@ import { StyledImageCard } from './image-card.styles'
 import { ImageCardProps } from './image-card.interfaces'
 const ImageCard = ({
   primaryImage,
-  alternativeText,
-  ...props
+  alternativeText
 }: ImageCardProps): JSX.Element => {
   return (
     <StyledImageCard>

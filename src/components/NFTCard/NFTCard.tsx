@@ -6,7 +6,7 @@ import ImageCard from './components/ImageCard/ImageCard'
 import InfoCard from './components/InfoCard/InfoCard'
 import { StyledNFTCard } from './nft-card.styles'
 
-const NFTCard = ({ ...props }): JSX.Element => {
+const NFTCard = (): JSX.Element => {
   return (
     <StyledNFTCard>
       <ImageCard

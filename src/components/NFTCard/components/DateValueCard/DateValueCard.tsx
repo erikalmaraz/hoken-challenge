@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyledDateValueCard } from './date-value-card.styles'
 import { DateValueCardProps } from './date-value-card.interfaces'
+
 const DateValueCard = ({
   currentValue,
   daysLeft,
-  currency,
-  ...props
+  currency
 }: DateValueCardProps): JSX.Element => {
   return (
     <StyledDateValueCard>
