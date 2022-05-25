@@ -3,8 +3,9 @@ import { neutral } from '../../styles/colors'
 
 export const StyledNFTCard = styled.div`
   min-height: 550px;
-  min-width: 400px;
+  max-width: 385px;
+  width: 80%;
   background: ${neutral.card};
   border-radius: 12px;
-  padding: 0.5em;
+  padding: 1.7em 1.5em;
 `
