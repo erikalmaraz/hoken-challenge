@@ -1,8 +1,8 @@
 export const NFTInfo = {
-  "image": {
-    "primary": "",
-    "secondary": ""
+  image: {
+    primary: '',
+    secondary: ''
   },
-  "name": "",
-  "description": ""
+  name: '',
+  description: ''
 }

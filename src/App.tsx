@@ -1,19 +1,19 @@
-import Home from "./pages/Home/Home";
-import { Router, RouteComponentProps } from "@reach/router";
+import React from 'react'
+import Home from './pages/Home/Home'
+import { Router, RouteComponentProps } from '@reach/router'
 
-function App() {
-
+function App(): JSX.Element {
   return (
     <>
-        <Router>
-          <RouterPage path="/" pageComponent={<Home />} />
-        </Router>
+      <Router>
+        <RouterPage path="/" pageComponent={<Home />} />
+      </Router>
     </>
-  );
+  )
 }
 
 const RouterPage = (
   props: { pageComponent: JSX.Element } & RouteComponentProps
-) => props.pageComponent;
+): JSX.Element => props.pageComponent
 
-export default App;
+export default App
