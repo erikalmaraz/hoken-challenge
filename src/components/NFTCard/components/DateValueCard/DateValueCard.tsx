@@ -11,13 +11,13 @@ const DateValueCard = ({
     <StyledDateValueCard>
       <div className="footer-card--amount">
         <img src="./assets/images/icon-ethereum.svg" alt="Etherium icon" />
-        <span>
+        <span data-testid="footer-card--value">
           {currentValue} {currency}
         </span>
       </div>
       <div className="footer-card--time">
         <img src="./assets/images/icon-clock.svg" alt="Clock icon" />
-        <span>{daysLeft} days left</span>
+        <span data-testid="footer-card--days">{daysLeft} days left</span>
       </div>
     </StyledDateValueCard>
   )
