@@ -1,0 +1,66 @@
+{
+  "name": "hoken-frontend-challenge",
+  "version": "0.1.0",
+  "description": "Hoken frontend challenge - GH: @greatelse - Mail: erkalmar@gmail.com",
+  "author": "Erik Almaraz <erkalmar@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "prettier": "prettier-config-standard",
+  "scripts": {
+    "start": "PORT=3001 BROWSER=none",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "yarn lint:format && yarn lint:js",
+    "lint:format": "prettier --check \"./**/*.{js,jsx,ts,tsx}\"",
+    "lint:js": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint \"./**/*.{js,jsx,ts,tsx}\" --fix",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx}\""
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.1",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/react-hooks": "^8.0.0",
+    "@testing-library/user-event": "^14.1.1",
+    "@types/jest": "^25.2.1",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "@types/styled-components": "^5.1.2",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "dotenv": "^16.0.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-testing-library": "^5.3.1",
+    "jest": "^28.0.3",
+    "prettier": "^2.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.6.4"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
