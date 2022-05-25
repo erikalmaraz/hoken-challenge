@@ -9,6 +9,10 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier"
+
+  ],
+  "plugins": [
+    "prettier"
   ],
   "settings": {
     "react": {
@@ -17,8 +21,7 @@
   },
   "rules": {
     "react/prop-types": 0,
-    "quotes": [2, "double", { "avoidEscape": true, "allowTemplateLiterals": true }]
-
+    "prettier/prettier": "error"
   },
 
   "ignorePatterns": [
