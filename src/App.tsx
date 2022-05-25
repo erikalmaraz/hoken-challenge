@@ -2,7 +2,7 @@ import React from 'react'
 import Home from './pages/Home/Home'
 import { Router, RouteComponentProps } from '@reach/router'
 
-function App(): JSX.Element {
+const App = (): JSX.Element => {
   return (
     <>
       <Router>
