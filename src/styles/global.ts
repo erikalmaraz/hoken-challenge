@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { GlobalVariables } from './global.interfaces'
+import { neutral, white } from './colors'
 /* GLOBAL VARIABLES */
 export const GlobalSettingsVariables: GlobalVariables = {
   fontFamily: 'Outfit',
@@ -12,6 +13,11 @@ export const GlobalSettingsVariables: GlobalVariables = {
 export const GlobalStyles = createGlobalStyle`
   :root {
     font-size: ${GlobalSettingsVariables.fontSize};
+  }
+  
+  body{
+    background-color: ${neutral.main};
+    color: ${white};
   }
 
   * {

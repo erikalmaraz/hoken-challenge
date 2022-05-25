@@ -1,5 +1,4 @@
 {
-  "printWidth": 80,
   "singleQuote": false,
   "trailingComma": "es5",
   "semi": false,
@@ -8,5 +7,5 @@
   "jsxSingleQuote": true,
   "bracketSpacing": true,
   "arrowParens": "always",
-  "endOfLine": "lf"
+  "endOfLine": "auto"
 }
