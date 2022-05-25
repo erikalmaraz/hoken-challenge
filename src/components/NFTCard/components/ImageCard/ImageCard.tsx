@@ -9,6 +9,10 @@ const ImageCard = ({
   return (
     <StyledImageCard>
       <img src={primaryImage} alt={alternativeText} />
+      <div className="image-card--layer"></div>
+      <div className="image-card--more-info">
+        <img src="./assets/images/icon-view.svg" alt="More information!" />
+      </div>
     </StyledImageCard>
   )
 }

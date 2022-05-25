@@ -22,10 +22,15 @@ export const GlobalStyles = createGlobalStyle`
 
   * {
     font-family: ${GlobalSettingsVariables.fontFamily}, sans-serif;
-    font-size: ${GlobalSettingsVariables.fontSize};
     box-sizing: ${GlobalSettingsVariables.boxSizing};
     padding: ${GlobalSettingsVariables.paddingSize};
     margin: ${GlobalSettingsVariables.marginSize};
+  }
+
+  @media screen and (max-width: 480px) {
+    :root {
+      font-size: 14px;
+    }
   }
 
 `
