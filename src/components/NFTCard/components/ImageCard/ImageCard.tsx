@@ -1,10 +1,14 @@
 import React from 'react'
 import { StyledImageCard } from './image-card.styles'
-
-const ImageCard = ({ ...props }): JSX.Element => {
+import { ImageProps } from './image-card.interfaces'
+const ImageCard = ({
+  primaryImage,
+  alternativeText,
+  ...props
+}: ImageProps): JSX.Element => {
   return (
     <StyledImageCard>
-      <img src="./assets/images/equilibrium-bg.jpg" alt="equilibrium-bg.jpg" />
+      <img src={primaryImage} alt={alternativeText} />
     </StyledImageCard>
   )
 }
