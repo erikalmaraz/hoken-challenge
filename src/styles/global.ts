@@ -1,12 +1,12 @@
-import { createGlobalStyle } from "styled-components"
-import { GlobalVariables } from "./global.interfaces"
+import { createGlobalStyle } from 'styled-components'
+import { GlobalVariables } from './global.interfaces'
 /* GLOBAL VARIABLES */
 export const GlobalSettingsVariables: GlobalVariables = {
-  fontFamily: "Outfit",
-  fontSize: "16px",
+  fontFamily: 'Outfit',
+  fontSize: '16px',
   marginSize: 0,
   paddingSize: 0,
-  boxSizing: "border-box",
+  boxSizing: 'border-box'
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -14,11 +14,6 @@ export const GlobalStyles = createGlobalStyle`
     font-size: ${GlobalSettingsVariables.fontSize};
   }
 
-  body {
-    background: ${({ theme }: { theme: { backgroundColor: string } }) =>
-      theme ? theme.backgroundColor : "#fff"}
-  }
-  
   * {
     font-family: ${GlobalSettingsVariables.fontFamily}, sans-serif;
     font-size: ${GlobalSettingsVariables.fontSize};

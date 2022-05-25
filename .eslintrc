@@ -27,6 +27,7 @@
   "ignorePatterns": [
     "**/.snap",
     "**/assets/*",
+    "build",
     "node_modules",
     "webpack.*",
     "testing",

@@ -1,8 +1,13 @@
 import React from 'react'
-import { StyledHome } from './home.styles'
-
+import NFTCard from '../../components/NFTCard/NFTCard'
+import { GlobalStyles } from '../../styles/global'
 const Home = ({ ...props }): JSX.Element => {
-  return <StyledHome>This is a test</StyledHome>
+  return (
+    <>
+      <GlobalStyles />
+      <NFTCard></NFTCard>
+    </>
+  )
 }
 
 Home.displayName = 'Home'
